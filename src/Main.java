@@ -27,5 +27,14 @@ public class Main {
         System.out.println("the vehicle info is:\n\t " + vehicleInfo);
         telematics.report(vehicleInfo);
 
+        vehicleInfo = new VehicleInfo();
+        vehicleInfo.setVin("111111");
+        vehicleInfo.setOdometer(70000);
+        vehicleInfo.setConsumption(40000);
+        vehicleInfo.setLastOilChange(65000);
+        vehicleInfo.setEngineSize("engine is 4.5");
+
+        System.out.println("the vehicle info is:\n\t " + vehicleInfo);
+        telematics.report(vehicleInfo);
     }
 }
